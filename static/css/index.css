@@ -129,8 +129,6 @@ body {
 }
 
 
-
-
 body{
     font-weight: 200;
     font-size: 16px;
@@ -151,7 +149,7 @@ b{rgb(0, 0, 0)
 
 .posts{
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-size: 14px;
+    font-size: 12px;
 
 }
 .news{
@@ -208,8 +206,8 @@ b{rgb(0, 0, 0)
 .posts > .post{
     border-bottom: 0;
     padding-bottom:0em;
-    padding-top: 10px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 3px;
 }
 .papertitle{
     margin-top: 0px;

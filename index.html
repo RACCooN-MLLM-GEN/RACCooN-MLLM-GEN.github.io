@@ -55,7 +55,7 @@
     </script>
 
   <script src="static/js/index.js"></script>
-  
+
 </head>
 <body>
 
@@ -64,8 +64,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">
-              🦝 RACCooN: Remove, Add, and Change Video Content with Auto-Generated Narratives</h1> 
+            <h1 class="title is-3 publication-title">
+              🦝 RACCooN: Remove, Add, and Change Video Content <br> with Auto-Generated Narratives</h1> 
             <div class="is-size-5 publication-authors">
               
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span> -->
@@ -102,7 +102,6 @@
                           <span>Paper</span>
                         </a>
                       </span>
-
                   <!-- Github link -->
                   <!-- <span class="link-block">
                     <a href="https://github.com/jaehong31/raccoon" target="_blank"
@@ -113,7 +112,6 @@
                     <span>Code</span>
                   </a>
                 </span> -->
-
                 <span class="link-block">
 									<a href="https://github.com/jaehong31/raccoon" class="external-link button is-normal is-rounded is-dark">
 										<span class="icon">
@@ -122,16 +120,6 @@
 										<span>Code</span>
 									</a>
 								</span>
-
-                <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://huggingface.co/spaces/PAIR/Text2Video-Zero"
-                       class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <img src="./static/images/hf.png" alt="Button Image">
-                      </span>
-                      <span>Demo</span>
-                      </a> -->
             </div>
           </div>
         </div>
@@ -140,32 +128,44 @@
   </div>
 </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <center>
+        <img src="./static/images/teaser.png" alt="Teaser" width="70%">
+      </center>
+      <div class="content has-text-justified">
+          <b>Figure 1: Overview of RACCooN</b>, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives.
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <img src="static/images/teaser.png">
-      
         <div class="content has-text-justified">
           <p>
-            <b>Figure 1: Overview of RACCooN</b>, a versatile and user-friendly video-to-paragraph-to-video frame- work, enables users to remove, add, or change video content via updating auto-generated narratives.
-          </br>
-          </br>
             Recent video generative models primarily rely on carefully written text prompts for specific tasks, like inpainting or style editing. They require labor-intensive textual descriptions for input videos, hindering their flexibility to adapt personal/raw videos to user specifications. This paper proposes RACCooN, a versatile and user-friendly video-to-paragraph-to-video generative framework that supports multiple video editing capabilities such as removal, addition, and modification, through a unified pipeline. RACCooN consists of two principal stages: Video-to-Paragraph (V2P) and Paragraph-to-Video (P2V). In the V2P stage, we automatically describe video scenes in well-structured natural language, capturing both the holistic context and focused object details. Subsequently, in the P2V stage, users can optionally refine these descriptions to guide the video diffusion model, enabling various modifica- tions to the input video, such as removing, changing subjects, and/or adding new objects. The proposed approach stands out from other methods through several significant contributions: (1) RACCooN suggests a multi-granular spatiotemporal pooling strategy to generate well-structured video descriptions, capturing both the broad context and object details without requiring complex human annotations, simplifying precise video content editing based on text for users. (2) Our video generative model incorporates auto-generated narratives or instructions to enhance the quality and accuracy of the generated content. It supports the addition of video objects, inpainting, and attribute modification within a unified framework, surpassing existing video editing and inpainting benchmarks. The proposed framework demonstrates impressive versatile capabilities in video-to-paragraph generation (up to 10.8% ↑ relative improvement in human evaluations against the baseline), video content editing (relative 49.7% ↑ in FVD), and can be incorporated into other SoTA video generative models for further enhancement
           </p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-2">RACCooN Framework</h2>
+        <h2 class="title is-3">RACCooN Framework</h2>
         <div class="content has-text-justified">
           <img src="static/images/pipeline.png">
         </div>
