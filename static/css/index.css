@@ -23,7 +23,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 .teaser {
@@ -270,7 +270,7 @@ b{rgb(0, 0, 0)
 }
 .marquee-item{
   width: 400px;
-  height: 250px;
+  height: 260px;
   display: inline-block;
   margin: 0 10px;
   float: left;
