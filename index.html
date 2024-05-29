@@ -56,12 +56,16 @@
     window.scrollTo(0, 0);
   }
     </script>
-    
-  <script src="static/js/index.js"></script>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          window.scrollTo(0, 0);
+      });
+  </script>
+<script src="static/js/index.js"></script>
 </head>
-<body>
 
+
+<body>
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -139,7 +143,7 @@
   <div class="body">
     <div class="container">
       <center>
-        <img src="./static/images/teaser.png" alt="Teaser" width="70%">
+        <img src="./static/images/teaser.png" width="70%">
       </center>
       <div class="content has-text-justified">
           <b>Figure 1: Overview of RACCooN</b>, a versatile and user-friendly video-to-paragraph-to-video framework, enables users to remove, add, or change video content via updating auto-generated narratives.
@@ -148,7 +152,6 @@
     </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -166,6 +169,7 @@
 
   </div>
 </section>
+
 
 
 <section class="section hero">
